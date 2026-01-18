@@ -1,0 +1,26 @@
+{
+  "": {
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/master.swiftdeps"
+  },
+  "/Users/guerillagorilla/git/assistant/Sources/VPAResponse/LLMResponder.swift": {
+    "dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LLMResponder.d",
+    "object": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LLMResponder.swift.o",
+    "swiftmodule": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LLMResponder~partial.swiftmodule",
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LLMResponder.swiftdeps",
+    "diagnostics": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LLMResponder.dia"
+  },
+  "/Users/guerillagorilla/git/assistant/Sources/VPAResponse/LocalLLM.swift": {
+    "dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LocalLLM.d",
+    "object": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LocalLLM.swift.o",
+    "swiftmodule": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LocalLLM~partial.swiftmodule",
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LocalLLM.swiftdeps",
+    "diagnostics": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LocalLLM.dia"
+  },
+  "/Users/guerillagorilla/git/assistant/Sources/VPAResponse/Responder.swift": {
+    "dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/Responder.d",
+    "object": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/Responder.swift.o",
+    "swiftmodule": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/Responder~partial.swiftmodule",
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/Responder.swiftdeps",
+    "diagnostics": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/Responder.dia"
+  }
+}

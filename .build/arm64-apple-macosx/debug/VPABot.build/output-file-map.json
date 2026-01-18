@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build/master.swiftdeps"
+  },
+  "/Users/guerillagorilla/git/assistant/Sources/VPABot/BotConnector.swift": {
+    "dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build/BotConnector.d",
+    "object": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build/BotConnector.swift.o",
+    "swiftmodule": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build/BotConnector~partial.swiftmodule",
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build/BotConnector.swiftdeps",
+    "diagnostics": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build/BotConnector.dia"
+  }
+}

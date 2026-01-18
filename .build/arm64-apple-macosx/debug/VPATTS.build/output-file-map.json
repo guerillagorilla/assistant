@@ -1,0 +1,33 @@
+{
+  "": {
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/master.swiftdeps"
+  },
+  "/Users/guerillagorilla/git/assistant/Sources/VPATTS/AVSpeechStreamTTSEngine.swift": {
+    "dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/AVSpeechStreamTTSEngine.d",
+    "object": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/AVSpeechStreamTTSEngine.swift.o",
+    "swiftmodule": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/AVSpeechStreamTTSEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/AVSpeechStreamTTSEngine.swiftdeps",
+    "diagnostics": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/AVSpeechStreamTTSEngine.dia"
+  },
+  "/Users/guerillagorilla/git/assistant/Sources/VPATTS/PiperCLITTSEngine.swift": {
+    "dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/PiperCLITTSEngine.d",
+    "object": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/PiperCLITTSEngine.swift.o",
+    "swiftmodule": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/PiperCLITTSEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/PiperCLITTSEngine.swiftdeps",
+    "diagnostics": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/PiperCLITTSEngine.dia"
+  },
+  "/Users/guerillagorilla/git/assistant/Sources/VPATTS/SystemTTSEngine.swift": {
+    "dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/SystemTTSEngine.d",
+    "object": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/SystemTTSEngine.swift.o",
+    "swiftmodule": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/SystemTTSEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/SystemTTSEngine.swiftdeps",
+    "diagnostics": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/SystemTTSEngine.dia"
+  },
+  "/Users/guerillagorilla/git/assistant/Sources/VPATTS/TTSStubs.swift": {
+    "dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/TTSStubs.d",
+    "object": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/TTSStubs.swift.o",
+    "swiftmodule": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/TTSStubs~partial.swiftmodule",
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/TTSStubs.swiftdeps",
+    "diagnostics": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/TTSStubs.dia"
+  }
+}

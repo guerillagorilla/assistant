@@ -1,0 +1,2737 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.xctest/Contents/MacOS/VPAPackageTests",
+      "packagePath" : "/Users/guerillagorilla/git/assistant",
+      "productName" : "VPAPackageTests"
+    }
+  ],
+  "copyCommands" : {
+    "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPA_VPACoreTests.bundle/AudioCorpus" : {
+      "inputs" : [
+        {
+          "kind" : "directory",
+          "name" : "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/AudioCorpus"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "directory",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPA_VPACoreTests.bundle/AudioCorpus"
+        }
+      ]
+    }
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.VPAApp-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAApp.build/sources",
+      "importPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAApp/MenuBarController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAApp/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPACore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPABot.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAAudio.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAInput.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPASTT.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPATTS.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAResponse.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAConfig.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAApp.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "VPAApp",
+      "moduleOutputPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAApp.swiftmodule",
+      "objects" : [
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAApp.build/MenuBarController.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAApp.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "VPAApp_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "assistant"
+      ],
+      "outputFileMapPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAApp.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAApp.build/MenuBarController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAApp.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAApp.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/guerillagorilla/git/assistant/Sources/VPAApp/MenuBarController.swift",
+        "/Users/guerillagorilla/git/assistant/Sources/VPAApp/main.swift"
+      ],
+      "tempsPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAApp.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.VPAAudio-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/sources",
+      "importPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAAudio/AVAudioCaptureService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAAudio/AudioStubs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAAudio/SimpleVADSegmenter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAAudio/VPAAudioPlayer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPACore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "VPAAudio",
+      "moduleOutputPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAAudio.swiftmodule",
+      "objects" : [
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/AVAudioCaptureService.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/AudioStubs.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/SimpleVADSegmenter.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/VPAAudioPlayer.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/include/VPAAudio-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "assistant"
+      ],
+      "outputFileMapPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/AVAudioCaptureService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/AudioStubs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/SimpleVADSegmenter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/VPAAudioPlayer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAAudio.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/guerillagorilla/git/assistant/Sources/VPAAudio/AVAudioCaptureService.swift",
+        "/Users/guerillagorilla/git/assistant/Sources/VPAAudio/AudioStubs.swift",
+        "/Users/guerillagorilla/git/assistant/Sources/VPAAudio/SimpleVADSegmenter.swift",
+        "/Users/guerillagorilla/git/assistant/Sources/VPAAudio/VPAAudioPlayer.swift"
+      ],
+      "tempsPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.VPABot-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build/sources",
+      "importPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPABot/BotConnector.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPACore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAConfig.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "VPABot",
+      "moduleOutputPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPABot.swiftmodule",
+      "objects" : [
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build/BotConnector.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build/include/VPABot-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "assistant"
+      ],
+      "outputFileMapPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build/BotConnector.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPABot.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/guerillagorilla/git/assistant/Sources/VPABot/BotConnector.swift"
+      ],
+      "tempsPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.VPAConfig-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build/sources",
+      "importPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAConfig/Config.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "VPAConfig",
+      "moduleOutputPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAConfig.swiftmodule",
+      "objects" : [
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build/Config.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build/include/VPAConfig-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "assistant"
+      ],
+      "outputFileMapPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build/Config.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAConfig.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/guerillagorilla/git/assistant/Sources/VPAConfig/Config.swift"
+      ],
+      "tempsPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.VPACore-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/sources",
+      "importPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPACore/Assistant.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPACore/Interfaces.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPACore/Metrics.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPACore/RollingMetricsSink.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPACore/StateMachine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAConfig.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "VPACore",
+      "moduleOutputPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPACore.swiftmodule",
+      "objects" : [
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/Assistant.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/Interfaces.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/Metrics.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/RollingMetricsSink.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/StateMachine.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/include/VPACore-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "assistant"
+      ],
+      "outputFileMapPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/Assistant.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/Interfaces.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/Metrics.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/RollingMetricsSink.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/StateMachine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPACore.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/guerillagorilla/git/assistant/Sources/VPACore/Assistant.swift",
+        "/Users/guerillagorilla/git/assistant/Sources/VPACore/Interfaces.swift",
+        "/Users/guerillagorilla/git/assistant/Sources/VPACore/Metrics.swift",
+        "/Users/guerillagorilla/git/assistant/Sources/VPACore/RollingMetricsSink.swift",
+        "/Users/guerillagorilla/git/assistant/Sources/VPACore/StateMachine.swift"
+      ],
+      "tempsPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.VPACoreTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/sources",
+      "importPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/AudioCorpusTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/ControlStateTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/LLMPolicyRoutingTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/PersonaFilterTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/SignalVADTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/TestSupport.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<VPACoreTests-arm64-apple-macosx26.0-debug.module-resources>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPACore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAResponse.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAConfig.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAAudio.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPASTT.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPABot.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "VPACoreTests",
+      "moduleOutputPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPACoreTests.swiftmodule",
+      "objects" : [
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/AudioCorpusTests.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/ControlStateTests.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/LLMPolicyRoutingTests.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/PersonaFilterTests.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/SignalVADTests.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/TestSupport.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/resource_bundle_accessor.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+        "-module-cache-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "assistant"
+      ],
+      "outputFileMapPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/AudioCorpusTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/ControlStateTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/LLMPolicyRoutingTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/PersonaFilterTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/SignalVADTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/TestSupport.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPACoreTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/AudioCorpusTests.swift",
+        "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/ControlStateTests.swift",
+        "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/LLMPolicyRoutingTests.swift",
+        "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/PersonaFilterTests.swift",
+        "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/SignalVADTests.swift",
+        "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/TestSupport.swift",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/DerivedSources/resource_bundle_accessor.swift"
+      ],
+      "tempsPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.VPAInput-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAInput.build/sources",
+      "importPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAInput/GlobeKeyInputController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPACore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAInput.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "VPAInput",
+      "moduleOutputPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAInput.swiftmodule",
+      "objects" : [
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAInput.build/GlobeKeyInputController.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAInput.build/include/VPAInput-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "assistant"
+      ],
+      "outputFileMapPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAInput.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAInput.build/GlobeKeyInputController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAInput.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/guerillagorilla/git/assistant/Sources/VPAInput/GlobeKeyInputController.swift"
+      ],
+      "tempsPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAInput.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.VPAPackageTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.build/sources",
+      "importPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPACoreTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "VPAPackageTests",
+      "moduleOutputPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.build/include/VPAPackageTests-Swift.h",
+        "-color-diagnostics",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "assistant"
+      ],
+      "outputFileMapPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.VPAResponse-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/sources",
+      "importPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAResponse/LLMResponder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAResponse/LocalLLM.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAResponse/Responder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPACore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPABot.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "VPAResponse",
+      "moduleOutputPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAResponse.swiftmodule",
+      "objects" : [
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LLMResponder.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LocalLLM.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/Responder.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/include/VPAResponse-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "assistant"
+      ],
+      "outputFileMapPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LLMResponder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LocalLLM.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/Responder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAResponse.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/guerillagorilla/git/assistant/Sources/VPAResponse/LLMResponder.swift",
+        "/Users/guerillagorilla/git/assistant/Sources/VPAResponse/LocalLLM.swift",
+        "/Users/guerillagorilla/git/assistant/Sources/VPAResponse/Responder.swift"
+      ],
+      "tempsPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.VPASTT-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPASTT.build/sources",
+      "importPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPASTT/STTStubs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPASTT/WhisperCLISTTEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPACore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAConfig.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPASTT.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "VPASTT",
+      "moduleOutputPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPASTT.swiftmodule",
+      "objects" : [
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPASTT.build/STTStubs.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPASTT.build/WhisperCLISTTEngine.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPASTT.build/include/VPASTT-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "assistant"
+      ],
+      "outputFileMapPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPASTT.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPASTT.build/STTStubs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPASTT.build/WhisperCLISTTEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPASTT.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/guerillagorilla/git/assistant/Sources/VPASTT/STTStubs.swift",
+        "/Users/guerillagorilla/git/assistant/Sources/VPASTT/WhisperCLISTTEngine.swift"
+      ],
+      "tempsPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPASTT.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.VPATTS-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/sources",
+      "importPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPATTS/AVSpeechStreamTTSEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPATTS/PiperCLITTSEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPATTS/SystemTTSEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPATTS/TTSStubs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPACore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPAConfig.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "VPATTS",
+      "moduleOutputPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPATTS.swiftmodule",
+      "objects" : [
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/AVSpeechStreamTTSEngine.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/PiperCLITTSEngine.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/SystemTTSEngine.swift.o",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/TTSStubs.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/include/VPATTS-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "assistant"
+      ],
+      "outputFileMapPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/AVSpeechStreamTTSEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/PiperCLITTSEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/SystemTTSEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/TTSStubs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules/VPATTS.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/guerillagorilla/git/assistant/Sources/VPATTS/AVSpeechStreamTTSEngine.swift",
+        "/Users/guerillagorilla/git/assistant/Sources/VPATTS/PiperCLITTSEngine.swift",
+        "/Users/guerillagorilla/git/assistant/Sources/VPATTS/SystemTTSEngine.swift",
+        "/Users/guerillagorilla/git/assistant/Sources/VPATTS/TTSStubs.swift"
+      ],
+      "tempsPath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "VPAApp" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "VPAApp",
+      "-package-name",
+      "assistant",
+      "-c",
+      "/Users/guerillagorilla/git/assistant/Sources/VPAApp/MenuBarController.swift",
+      "/Users/guerillagorilla/git/assistant/Sources/VPAApp/main.swift",
+      "-I",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "VPAApp_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "assistant",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "VPAAudio" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "VPAAudio",
+      "-package-name",
+      "assistant",
+      "-c",
+      "/Users/guerillagorilla/git/assistant/Sources/VPAAudio/AVAudioCaptureService.swift",
+      "/Users/guerillagorilla/git/assistant/Sources/VPAAudio/AudioStubs.swift",
+      "/Users/guerillagorilla/git/assistant/Sources/VPAAudio/SimpleVADSegmenter.swift",
+      "/Users/guerillagorilla/git/assistant/Sources/VPAAudio/VPAAudioPlayer.swift",
+      "-I",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/include/VPAAudio-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "assistant",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "VPABot" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "VPABot",
+      "-package-name",
+      "assistant",
+      "-c",
+      "/Users/guerillagorilla/git/assistant/Sources/VPABot/BotConnector.swift",
+      "-I",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build/include/VPABot-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "assistant",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "VPAConfig" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "VPAConfig",
+      "-package-name",
+      "assistant",
+      "-c",
+      "/Users/guerillagorilla/git/assistant/Sources/VPAConfig/Config.swift",
+      "-I",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build/include/VPAConfig-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "assistant",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "VPACore" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "VPACore",
+      "-package-name",
+      "assistant",
+      "-c",
+      "/Users/guerillagorilla/git/assistant/Sources/VPACore/Assistant.swift",
+      "/Users/guerillagorilla/git/assistant/Sources/VPACore/Interfaces.swift",
+      "/Users/guerillagorilla/git/assistant/Sources/VPACore/Metrics.swift",
+      "/Users/guerillagorilla/git/assistant/Sources/VPACore/RollingMetricsSink.swift",
+      "/Users/guerillagorilla/git/assistant/Sources/VPACore/StateMachine.swift",
+      "-I",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/include/VPACore-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "assistant",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "VPACoreTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "VPACoreTests",
+      "-package-name",
+      "assistant",
+      "-c",
+      "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/AudioCorpusTests.swift",
+      "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/ControlStateTests.swift",
+      "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/LLMPolicyRoutingTests.swift",
+      "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/PersonaFilterTests.swift",
+      "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/SignalVADTests.swift",
+      "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/TestSupport.swift",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/DerivedSources/resource_bundle_accessor.swift",
+      "-I",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+      "-module-cache-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "assistant",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "VPAInput" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "VPAInput",
+      "-package-name",
+      "assistant",
+      "-c",
+      "/Users/guerillagorilla/git/assistant/Sources/VPAInput/GlobeKeyInputController.swift",
+      "-I",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAInput.build/include/VPAInput-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "assistant",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "VPAPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "VPAPackageTests",
+      "-package-name",
+      "assistant",
+      "-c",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.build/include/VPAPackageTests-Swift.h",
+      "-color-diagnostics",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "assistant",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "VPAResponse" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "VPAResponse",
+      "-package-name",
+      "assistant",
+      "-c",
+      "/Users/guerillagorilla/git/assistant/Sources/VPAResponse/LLMResponder.swift",
+      "/Users/guerillagorilla/git/assistant/Sources/VPAResponse/LocalLLM.swift",
+      "/Users/guerillagorilla/git/assistant/Sources/VPAResponse/Responder.swift",
+      "-I",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/include/VPAResponse-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "assistant",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "VPASTT" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "VPASTT",
+      "-package-name",
+      "assistant",
+      "-c",
+      "/Users/guerillagorilla/git/assistant/Sources/VPASTT/STTStubs.swift",
+      "/Users/guerillagorilla/git/assistant/Sources/VPASTT/WhisperCLISTTEngine.swift",
+      "-I",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPASTT.build/include/VPASTT-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "assistant",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "VPATTS" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "VPATTS",
+      "-package-name",
+      "assistant",
+      "-c",
+      "/Users/guerillagorilla/git/assistant/Sources/VPATTS/AVSpeechStreamTTSEngine.swift",
+      "/Users/guerillagorilla/git/assistant/Sources/VPATTS/PiperCLITTSEngine.swift",
+      "/Users/guerillagorilla/git/assistant/Sources/VPATTS/SystemTTSEngine.swift",
+      "/Users/guerillagorilla/git/assistant/Sources/VPATTS/TTSStubs.swift",
+      "-I",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/include/VPATTS-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "assistant",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "VPAApp" : [
+      "VPAResponse",
+      "VPATTS",
+      "VPASTT",
+      "VPAInput",
+      "VPAAudio",
+      "VPABot",
+      "VPACore",
+      "VPAConfig"
+    ],
+    "VPAAudio" : [
+      "VPACore",
+      "VPAConfig"
+    ],
+    "VPABot" : [
+      "VPACore",
+      "VPAConfig"
+    ],
+    "VPAConfig" : [
+
+    ],
+    "VPACore" : [
+      "VPAConfig"
+    ],
+    "VPACoreTests" : [
+      "VPASTT",
+      "VPAAudio",
+      "VPAResponse",
+      "VPABot",
+      "VPACore",
+      "VPAConfig"
+    ],
+    "VPAInput" : [
+      "VPACore",
+      "VPAConfig"
+    ],
+    "VPAPackageTests" : [
+      "VPACoreTests",
+      "VPASTT",
+      "VPAAudio",
+      "VPAResponse",
+      "VPABot",
+      "VPACore",
+      "VPAConfig"
+    ],
+    "VPAResponse" : [
+      "VPABot",
+      "VPACore",
+      "VPAConfig"
+    ],
+    "VPASTT" : [
+      "VPACore",
+      "VPAConfig"
+    ],
+    "VPATTS" : [
+      "VPACore",
+      "VPAConfig"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAApp.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAApp/MenuBarController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAApp/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAApp.build/sources"
+    },
+    "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAAudio/AVAudioCaptureService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAAudio/AudioStubs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAAudio/SimpleVADSegmenter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAAudio/VPAAudioPlayer.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/sources"
+    },
+    "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPABot/BotConnector.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build/sources"
+    },
+    "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAConfig/Config.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build/sources"
+    },
+    "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPACore/Assistant.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPACore/Interfaces.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPACore/Metrics.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPACore/RollingMetricsSink.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPACore/StateMachine.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/sources"
+    },
+    "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/AudioCorpusTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/ControlStateTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/LLMPolicyRoutingTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/PersonaFilterTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/SignalVADTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/TestSupport.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/DerivedSources/resource_bundle_accessor.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/sources"
+    },
+    "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAInput.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAInput/GlobeKeyInputController.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAInput.build/sources"
+    },
+    "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.build/sources"
+    },
+    "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/AVAudioCaptureService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/AudioStubs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/SimpleVADSegmenter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/VPAAudioPlayer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build/BotConnector.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build/Config.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/Assistant.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/Interfaces.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/Metrics.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/RollingMetricsSink.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/StateMachine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/AudioCorpusTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/ControlStateTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/LLMPolicyRoutingTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/PersonaFilterTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/SignalVADTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/TestSupport.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LLMResponder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LocalLLM.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/Responder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPASTT.build/STTStubs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPASTT.build/WhisperCLISTTEngine.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAResponse/LLMResponder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAResponse/LocalLLM.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPAResponse/Responder.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/sources"
+    },
+    "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPASTT.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPASTT/STTStubs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPASTT/WhisperCLISTTEngine.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPASTT.build/sources"
+    },
+    "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPATTS/AVSpeechStreamTTSEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPATTS/PiperCLITTSEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPATTS/SystemTTSEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/Sources/VPATTS/TTSStubs.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/sources"
+    },
+    "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    },
+    "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/vpa-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/vpa-entitlement.plist"
+    },
+    "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/vpa.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAApp.build/MenuBarController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAApp.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/AVAudioCaptureService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/AudioStubs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/SimpleVADSegmenter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/VPAAudioPlayer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPABot.build/BotConnector.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build/Config.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/Assistant.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/Interfaces.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/Metrics.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/RollingMetricsSink.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACore.build/StateMachine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAInput.build/GlobeKeyInputController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LLMResponder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/LocalLLM.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/Responder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPASTT.build/STTStubs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPASTT.build/WhisperCLISTTEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/AVSpeechStreamTTSEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/PiperCLITTSEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/SystemTTSEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPATTS.build/TTSStubs.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/vpa.product/Objects.LinkFileList"
+    }
+  }
+}

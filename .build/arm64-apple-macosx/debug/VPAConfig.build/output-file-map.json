@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build/master.swiftdeps"
+  },
+  "/Users/guerillagorilla/git/assistant/Sources/VPAConfig/Config.swift": {
+    "dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build/Config.d",
+    "object": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build/Config.swift.o",
+    "swiftmodule": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build/Config~partial.swiftmodule",
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build/Config.swiftdeps",
+    "diagnostics": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAConfig.build/Config.dia"
+  }
+}

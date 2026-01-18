@@ -1,0 +1,54 @@
+{
+  "": {
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/master.swiftdeps"
+  },
+  "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/AudioCorpusTests.swift": {
+    "dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/AudioCorpusTests.d",
+    "object": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/AudioCorpusTests.swift.o",
+    "swiftmodule": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/AudioCorpusTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/AudioCorpusTests.swiftdeps",
+    "diagnostics": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/AudioCorpusTests.dia"
+  },
+  "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/ControlStateTests.swift": {
+    "dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/ControlStateTests.d",
+    "object": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/ControlStateTests.swift.o",
+    "swiftmodule": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/ControlStateTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/ControlStateTests.swiftdeps",
+    "diagnostics": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/ControlStateTests.dia"
+  },
+  "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/LLMPolicyRoutingTests.swift": {
+    "dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/LLMPolicyRoutingTests.d",
+    "object": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/LLMPolicyRoutingTests.swift.o",
+    "swiftmodule": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/LLMPolicyRoutingTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/LLMPolicyRoutingTests.swiftdeps",
+    "diagnostics": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/LLMPolicyRoutingTests.dia"
+  },
+  "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/PersonaFilterTests.swift": {
+    "dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/PersonaFilterTests.d",
+    "object": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/PersonaFilterTests.swift.o",
+    "swiftmodule": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/PersonaFilterTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/PersonaFilterTests.swiftdeps",
+    "diagnostics": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/PersonaFilterTests.dia"
+  },
+  "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/SignalVADTests.swift": {
+    "dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/SignalVADTests.d",
+    "object": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/SignalVADTests.swift.o",
+    "swiftmodule": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/SignalVADTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/SignalVADTests.swiftdeps",
+    "diagnostics": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/SignalVADTests.dia"
+  },
+  "/Users/guerillagorilla/git/assistant/Tests/VPACoreTests/TestSupport.swift": {
+    "dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/TestSupport.d",
+    "object": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/TestSupport.swift.o",
+    "swiftmodule": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/TestSupport~partial.swiftmodule",
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/TestSupport.swiftdeps",
+    "diagnostics": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/TestSupport.dia"
+  },
+  "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/resource_bundle_accessor.d",
+    "object": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/resource_bundle_accessor.swiftdeps",
+    "diagnostics": "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPACoreTests.build/resource_bundle_accessor.dia"
+  }
+}

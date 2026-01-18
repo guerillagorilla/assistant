@@ -1,0 +1,59 @@
+{
+  "stt": { "primary": "whisper-cli", "fallback": "local-offline" },
+  "whisper": {
+    "cliPath": "/Users/guerillagorilla/git/assistant/whisper.cpp/build/bin/whisper-cli",
+    "modelPath": "/Users/guerillagorilla/git/assistant/whisper.cpp/models/ggml-base.en.bin",
+    "language": "en",
+    "threads": 4,
+    "beamSize": 5,
+    "bestOf": 5,
+    "temperature": 0.0
+  },
+  "tts": { "primary": "piper-cli", "fallback": "system-stream" },
+  "systemTTS": { "voiceIdentifier": "com.apple.eloquence.en-US.Flo", "rate": 0.5 },
+  "piper": {
+    "cliPath": "/Users/guerillagorilla/git/assistant/.venv-piper/bin/piper",
+    "modelPath": "/Users/guerillagorilla/git/assistant/en_GB-jenny_dioco-medium.onnx",
+    "configPath": "/Users/guerillagorilla/git/assistant/en_GB-jenny_dioco-medium.onnx.json",
+    "speakerId": null,
+    "lengthScale": null,
+    "noiseScale": null,
+    "noiseW": null,
+    "sentenceSilence": null,
+    "phonemeSilence": null
+  },
+  "audio": { "sampleRate": 16000, "preRollMs": 250, "gainDb": 6.0 },
+  "vad": { "silenceMsThreshold": 400, "minSpeechMs": 200, "energyThreshold": 0.015, "removeInternalSilence": true },
+  "persona": { "style": "glados-dry" },
+  "logging": { "level": "minimal", "persistAudio": false },
+  "latency": { "maxMs": 1000 },
+  "ux": {
+    "thinkingPauseMs": 150,
+    "maxSilenceMs": 300,
+    "ackMode": "earcon",
+    "ackText": "Acknowledged.",
+    "earconHz": 880.0,
+    "earconMs": 120,
+    "earconAmplitude": 0.2
+  },
+  "debug": {
+    "forceSttFailure": false,
+    "sttFailureRate": 0.0,
+    "forceConfidence": null,
+    "noiseOnlyInput": false
+  },
+  "llm": {
+    "backend": "ollama-http",
+    "cliPath": "ollama",
+    "modelName": "llama3.2",
+    "apiURL": "http://localhost:11434",
+    "maxTokens": 384,
+    "temperature": 0.2
+  },
+  "bot": { "wsURL": "ws://localhost:8000/api/bot", "rulesURL": "http://localhost:8000/api/rules" },
+  "responder": {
+    "minConfidence": 0.5,
+    "commandConfidence": 0.75,
+    "llmAll": true
+  }
+}

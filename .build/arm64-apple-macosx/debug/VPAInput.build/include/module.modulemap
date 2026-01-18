@@ -1,0 +1,3 @@
+module VPAInput {
+    header "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAInput.build/include/VPAInput-Swift.h"
+}
