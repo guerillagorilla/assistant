@@ -2,6 +2,4 @@
 .swiftpm/
 .venv-piper/
 .DS_Store
-whisper.cpp/build/
-whisper.cpp/models/*.bin
-whisper.cpp/models/*.gguf
+whisper.cpp/
