@@ -1,3 +1,0 @@
-module VPAResponse {
-    header "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAResponse.build/include/VPAResponse-Swift.h"
-}

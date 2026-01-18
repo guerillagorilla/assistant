@@ -1,3 +1,0 @@
-module VPAAudio {
-    header "/Users/guerillagorilla/git/assistant/.build/arm64-apple-macosx/debug/VPAAudio.build/include/VPAAudio-Swift.h"
-}
