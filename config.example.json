@@ -54,6 +54,8 @@
   "responder": {
     "minConfidence": 0.5,
     "commandConfidence": 0.75,
-    "llmAll": true
+    "strategyEnabled": true,
+    "explainMoves": true,
+    "voiceEnabled": true
   }
 }

@@ -103,13 +103,17 @@ public struct VPAConfig: Codable {
         public let minConfidence: Double?
         public let commandConfidence: Double?
         public let intentConfidenceThreshold: Double?
-        public let llmAll: Bool?
+        public let strategyEnabled: Bool?
+        public let explainMoves: Bool?
+        public let voiceEnabled: Bool?
 
-        public init(minConfidence: Double? = nil, commandConfidence: Double? = nil, intentConfidenceThreshold: Double? = nil, llmAll: Bool? = nil) {
+        public init(minConfidence: Double? = nil, commandConfidence: Double? = nil, intentConfidenceThreshold: Double? = nil, strategyEnabled: Bool? = nil, explainMoves: Bool? = nil, voiceEnabled: Bool? = nil) {
             self.minConfidence = minConfidence
             self.commandConfidence = commandConfidence
             self.intentConfidenceThreshold = intentConfidenceThreshold
-            self.llmAll = llmAll
+            self.strategyEnabled = strategyEnabled
+            self.explainMoves = explainMoves
+            self.voiceEnabled = voiceEnabled
         }
     }
 

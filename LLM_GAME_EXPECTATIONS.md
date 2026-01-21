@@ -1,6 +1,6 @@
-# LLM Game Expectations (Chrummy Join/Play)
+# LLM Game Expectations (Strategy-Orchestrator)
 
-This document defines **deterministic expectations** for how the LLM-assisted voice agent should behave when interacting with the Chrummy game. It is **join/play specific** and does not cover general chat.
+This document defines **deterministic expectations** for how the LLM-assisted voice agent behaves when interacting with the Chrummy game. It is **join/play specific** and does not cover general chat.
 
 ## Scope
 
@@ -8,7 +8,7 @@ Applies to:
 - Joining a room (bot WebSocket at `/api/bot`)
 - Creating a room (via `join` with `create: true`)
 - Fetching rules from `/api/rules` after join/create
-- LLM use for gameplay decisions when state is received
+- Strategy advice when state is received
 
 Out of scope:
 - General conversational replies
@@ -20,6 +20,7 @@ Out of scope:
 - **Room code**: two 4‑letter words, e.g., `MOON STAR`
 - **Bot endpoint**: `ws://localhost:8000/api/bot`
 - **Rules endpoint**: `http://localhost:8000/api/rules`
+- **Engine**: authoritative game rules + move selector
 
 ## Required Behavioral Expectations
 
@@ -73,31 +74,38 @@ Out of scope:
 
 **Expected behavior:**
 - Fetch `http://localhost:8000/api/rules`
-- Cache rules in memory for the LLM prompt.
+- Cache rules in memory for LLM context (explanation only)
 - Speak one of:
   - “Rules loaded. I understand.”
   - “Rules missing. Try again.” (empty/invalid response)
 
-### 4) LLM Prompt Injection (Gameplay)
+### 4) Strategy Advisory (On `your_turn`)
 
-When gameplay decisions are made (e.g., on `your_turn` events), the LLM prompt **must include**:
-- The cached rules JSON (or an empty string if not available)
-- Current state data (hand, round, discard top, etc.)
-- Explicit instruction to return a JSON action
+**Expected behavior:**
+- Request candidate moves from the engine using the current turn state.
+- If LLM strategy is enabled, call LLM to produce **strategy advice only**.
+- Send advice + state + candidates back to the engine to obtain the **engine-selected move**.
+- Announce the engine’s move with a truthful rationale (if enabled).
+- Send the engine’s move via `action: "play"`.
 
-Example requirement:
+### 5) LLM Strategy Output (Strict)
+
+The LLM must **never** output a move, draw source, or discard choice.
+
+The LLM must return JSON with **exactly** these keys:
 ```
-RULES_JSON=<cached rules json>
-STATE=<current turn state>
-Return JSON: {"draw":"deck|discard","meld":true|false,"discard":"7H"}
+{"vetoIds":[Int], "priorityAdjustments":{"candidateId":-1.0}, "flags":["string"], "rationale":"string"}
 ```
+
+Invalid advice is ignored; the engine still decides the move.
 
 ## Non‑Negotiables
 
 - **No room creation without explicit two‑word code.**
 - **No random room codes.**
 - **Join/create are deterministic (LLM is not used).**
-- **Rules fetch is always attempted after join/create.**
+- **Rules are for context only, not move generation.**
+- **LLM never decides a move. Engine is authoritative.**
 
 ## Validation Checklist
 
@@ -105,5 +113,5 @@ Return JSON: {"draw":"deck|discard","meld":true|false,"discard":"7H"}
 - [ ] "Create room MOON STAR" sends `{action:"join",room:"MOON STAR",create:true}`
 - [ ] Missing room → clarification, no WS message
 - [ ] Rules fetched after join/create
-- [ ] Rules cache injected into LLM prompt for gameplay
-
+- [ ] LLM strategy JSON contains only allowed keys
+- [ ] Engine move is the only move sent via `action:"play"`

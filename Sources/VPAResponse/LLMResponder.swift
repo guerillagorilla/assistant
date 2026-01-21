@@ -105,7 +105,7 @@ Return only the response text.
         if cleaned.isEmpty { return "" }
         switch intent {
         case .questionTime:
-            if cleaned.localizedCaseInsensitiveContains("time") {
+            if cleaned.localizedCaseInsensitiveContains("time") || cleaned.rangeOfCharacter(from: .decimalDigits) != nil || cleaned.contains(":") {
                 return cleaned
             }
             return "Current time is \(timeLabel)."
@@ -118,80 +118,5 @@ Return only the response text.
         case .greeting:
             return cleaned
         }
-    }
-}
-
-public final class GameLLMPlayer {
-    private let engine: LocalLLMEngine
-    private let rulesQueue = DispatchQueue(label: "vpa.llm.rules.game")
-    private var rulesText: String?
-
-    public init(engine: LocalLLMEngine) {
-        self.engine = engine
-    }
-
-    public func setRules(_ rules: String?) {
-        rulesQueue.sync {
-            self.rulesText = rules
-        }
-    }
-
-    public func decideMove(from payload: [String: Any]) -> [String: Any]? {
-        let rules = rulesSnapshot()
-        let prompt = buildPrompt(payload: payload, rules: rules)
-        let output = engine.complete(prompt: prompt).trimmingCharacters(in: .whitespacesAndNewlines)
-        if DebugFlags.llm {
-            let preview = output.count > 500 ? String(output.prefix(500)) + "…" : output
-            print("vpa llm: game output: \(preview)")
-        }
-        return parseDecision(output)
-    }
-
-    private func rulesSnapshot() -> String {
-        let snapshot = rulesQueue.sync { rulesText }
-        guard let snapshot, !snapshot.isEmpty else { return "" }
-        if snapshot.count > 3000 {
-            return String(snapshot.prefix(3000))
-        }
-        return snapshot
-    }
-
-    private func buildPrompt(payload: [String: Any], rules: String) -> String {
-        let round = payload["round_number"] ?? payload["roundNumber"] ?? ""
-        let req = payload["requirements"] ?? ""
-        let hand = payload["hand"] ?? []
-        let discardTop = payload["discard_top"] ?? payload["discardTop"] ?? ""
-        let deckCount = payload["deck_count"] ?? payload["deckCount"] ?? ""
-        let hasLaid = payload["has_laid_down"] ?? payload["hasLaidDown"] ?? false
-        let melds = payload["melds"] ?? []
-        let opponents = payload["opponents"] ?? []
-        let prompt = """
-You are playing Chinese Rummy. Make the next move for the Llama player.
-
-CURRENT STATE:
-- Round \(round)/7
-- Requirement: \(req)
-- Your hand: \(hand)
-- Discard pile top: \(discardTop)
-- Cards in deck: \(deckCount)
-- You have\( (String(describing: hasLaid)) == "true" ? "" : " NOT") laid down yet
-- Your melds: \(melds)
-- Opponents: \(opponents)
-
-RULES_JSON:
-\(rules)
-
-Respond with JSON only: {"draw":"deck|discard","meld":true|false,"discard":"CARD"}
-"""
-        return prompt
-    }
-
-    private func parseDecision(_ output: String) -> [String: Any]? {
-        guard let start = output.firstIndex(of: "{"),
-              let end = output.lastIndex(of: "}") else { return nil }
-        let jsonText = String(output[start...end])
-        guard let data = jsonText.data(using: .utf8),
-              let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else { return nil }
-        return obj
     }
 }

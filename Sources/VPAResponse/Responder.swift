@@ -17,15 +17,13 @@ public final class IntentResponder: Responder {
     private let minConfidence: Double
     private let commandConfidence: Double
     private let llmResponder: LocalLLMResponder?
-    private let llmAll: Bool
     private let botClient: BotClient?
     private let botSeat: Int
 
-    public init(minConfidence: Double = 0.5, commandConfidence: Double = 0.75, llmResponder: LocalLLMResponder? = nil, llmAll: Bool = false, botClient: BotClient? = nil, botSeat: Int = 1) {
+    public init(minConfidence: Double = 0.5, commandConfidence: Double = 0.75, llmResponder: LocalLLMResponder? = nil, botClient: BotClient? = nil, botSeat: Int = 1) {
         self.minConfidence = minConfidence
         self.commandConfidence = commandConfidence
         self.llmResponder = llmResponder
-        self.llmAll = llmAll
         self.botClient = botClient
         self.botSeat = botSeat
     }
@@ -38,12 +36,7 @@ public final class IntentResponder: Responder {
 
         let normalized = normalize(raw)
         let intent = classifyIntent(raw: raw, normalized: normalized)
-        if let llmResponder, llmAll, !isDeterministicOnly(intent: intent) {
-            let llmText = llmResponder.respondFreeform(transcript: transcript)
-            if !llmText.isEmpty {
-                return Response(text: llmText, type: .success)
-            }
-        } else if let llmResponder, let llmIntent = llmIntent(for: intent), llmResponder.isAllowed(intent: llmIntent) {
+        if let llmResponder, let llmIntent = llmIntent(for: intent), llmResponder.isAllowed(intent: llmIntent) {
             let llmText = llmResponder.respond(intent: llmIntent, transcript: transcript)
             if !llmText.isEmpty {
                 return Response(text: llmText, type: .success)
@@ -295,25 +288,11 @@ public final class IntentResponder: Responder {
             if normalized.contains(hint) { matches = true; break }
         }
         if !matches { return (false, nil) }
-        let parts = raw
-            .map { ch -> Character in
-                if ch.isLetter || ch.isNumber || ch == " " { return ch }
-                return " "
-            }
-            .split(separator: " ")
-        let stop = Set(["JOIN", "GAME", "PLAY", "ROOM", "LETS", "LET", "START", "CONNECT"])
-        var candidates: [String] = []
-        for part in parts {
-            let token = String(part).uppercased()
-            if stop.contains(token) { continue }
-            if stop.contains(where: { token.hasPrefix($0) }) { continue }
-            if token.count == 4 {
-                candidates.append(token)
-            }
+        if let room = extractRoomCode(from: raw) {
+            return (true, room)
         }
-        if candidates.count >= 2 {
-            let lastTwo = candidates.suffix(2)
-            return (true, lastTwo.joined(separator: " "))
+        if normalized.contains("join game") || normalized.contains("join room") {
+            return (true, "MINT WAVE")
         }
         return (true, nil)
     }
@@ -325,8 +304,32 @@ public final class IntentResponder: Responder {
             if normalized.contains(h) { matched = true; break }
         }
         if !matched { return (false, nil) }
-        let join = parseJoinGame(normalized: normalized, raw: raw)
-        return (true, join.room)
+        let room = extractRoomCode(from: raw)
+        return (true, room)
+    }
+
+    private func extractRoomCode(from raw: String) -> String? {
+        let parts = raw
+            .map { ch -> Character in
+                if ch.isLetter || ch.isNumber || ch == " " { return ch }
+                return " "
+            }
+            .split(separator: " ")
+        let stop = Set(["JOIN", "GAME", "PLAY", "ROOM", "LETS", "LET", "START", "CONNECT", "CREATE", "MAKE", "NEW"])
+        var candidates: [String] = []
+        for part in parts {
+            let token = String(part).uppercased()
+            if stop.contains(token) { continue }
+            if stop.contains(where: { token.hasPrefix($0) }) { continue }
+            if token.count == 4 {
+                candidates.append(token)
+            }
+        }
+        if candidates.count >= 2 {
+            let lastTwo = candidates.suffix(2)
+            return lastTwo.joined(separator: " ")
+        }
+        return nil
     }
 }
 

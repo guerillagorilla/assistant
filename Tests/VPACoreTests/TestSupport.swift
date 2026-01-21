@@ -137,6 +137,8 @@ final class TestBotClient: BotClient {
     var joins: [(room: String, seat: Int)] = []
     var creates: [String] = []
     var rulesFetchCount = 0
+    var candidateRequests = 0
+    var moveRequests = 0
 
     func join(room: String, seat: Int) {
         joins.append((room: room, seat: seat))
@@ -148,6 +150,19 @@ final class TestBotClient: BotClient {
 
     func fetchRules() {
         rulesFetchCount += 1
+    }
+
+    func requestCandidates(state: [String : Any], completion: @escaping ([[String : Any]]?) -> Void) {
+        candidateRequests += 1
+        completion(nil)
+    }
+
+    func requestMove(state: [String : Any], candidates: [[String : Any]]?, advice: [String : Any], completion: @escaping (BotMove?) -> Void) {
+        moveRequests += 1
+        completion(nil)
+    }
+
+    func play(draw: String, meld: Bool, discard: String) {
     }
 }
 

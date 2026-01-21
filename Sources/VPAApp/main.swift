@@ -90,9 +90,13 @@ if captureOnly {
 
 let llmEngine = makeLLMEngine(config: config)
 let llmResponder = makeLLMResponder(config: config, engine: llmEngine)
-let gamePlayer = llmEngine != nil ? GameLLMPlayer(engine: llmEngine!) : nil
+let strategyAdvisor = llmEngine != nil ? GameStrategyAdvisor(engine: llmEngine!) : nil
 var botClient: BotClient?
 var pendingRulesAnnouncement: ((String) -> Void)?
+let strategyEnabled = config?.responder?.strategyEnabled ?? true
+let explainMoves = config?.responder?.explainMoves ?? true
+let voiceEnabled = config?.responder?.voiceEnabled ?? true
+var lastTurnPayload: [String: Any]?
 
 if let config, config.tts.primary == "system" {
     if captureOnly {
@@ -143,31 +147,56 @@ botClient = BotConnectorFactory.from(config: config, onRoomCreated: { room, seat
     print("vpa bot: room created \(room) seat \(seat)")
 }, onRules: { rules in
     pendingRulesAnnouncement?(rules)
-    gamePlayer?.setRules(rules)
+    strategyAdvisor?.setRules(rules)
 }, onYourTurn: { payload in
-    guard let gamePlayer, let botClient else { return }
-    let decision = gamePlayer.decideMove(from: payload)
-    let draw = (decision?["draw"] as? String) ?? "deck"
-    let meld = (decision?["meld"] as? Bool) ?? false
-    let discard = (decision?["discard"] as? String) ?? ""
-    if discard.isEmpty {
+    lastTurnPayload = payload
+    guard let botClient else { return }
+    if let inlineCandidates = payload["candidates"] as? [[String: Any]] {
+        handleStrategyTurn(payload: payload, candidates: inlineCandidates)
         return
     }
-    let announce = "Drawing from \(draw). Discarding \(discard). Try to keep up."
-    if let direct = ttsEngine as? DirectSpeechEngine {
-        direct.speak(text: announce)
-    } else {
-        let stream = ttsEngine.synthesize(text: announce)
-        player.play(stream: stream)
+    botClient.requestCandidates(state: payload) { candidates in
+        handleStrategyTurn(payload: payload, candidates: candidates)
     }
-    botClient.play(draw: draw, meld: meld, discard: discard)
+}, onStrategyInvalid: { message in
+    if DebugFlags.input {
+        print("vpa bot: strategy rejected (\(message)). Re-requesting candidates.")
+    }
+    guard let payload = lastTurnPayload, let botClient else { return }
+    botClient.requestCandidates(state: payload) { candidates in
+        handleStrategyTurn(payload: payload, candidates: candidates)
+    }
 })
+
+private func handleStrategyTurn(payload: [String: Any], candidates: [[String: Any]]?) {
+    guard let botClient else { return }
+    let advice: StrategyAdvice?
+    if strategyEnabled, let advisor = strategyAdvisor {
+        advice = advisor.advise(state: payload, candidates: candidates)
+    } else {
+        advice = nil
+    }
+    let advicePayload = advice?.payload() ?? ["vetoIds": [], "priorityAdjustments": [:], "flags": [], "rationale": ""]
+    botClient.requestMove(state: payload, candidates: candidates, advice: advicePayload) { move in
+        guard let move else { return }
+        if voiceEnabled {
+            let explanation = explainMoves ? " after I advised \(advice?.summary() ?? "no changes")" : ""
+            let announce = "The engine discarded \(move.discard)\(explanation)."
+            if let direct = ttsEngine as? DirectSpeechEngine {
+                direct.speak(text: announce)
+            } else {
+                let stream = ttsEngine.synthesize(text: announce)
+                player.play(stream: stream)
+            }
+        }
+        botClient.play(draw: move.draw, meld: move.meld, discard: move.discard)
+    }
+}
 
 let responder = IntentResponder(
     minConfidence: config?.responder?.minConfidence ?? 0.5,
     commandConfidence: config?.responder?.commandConfidence ?? 0.75,
     llmResponder: llmResponder,
-    llmAll: config?.responder?.llmAll ?? false,
     botClient: botClient,
     botSeat: 1
 )
